@@ -32,13 +32,13 @@ const App = () => {
       console.log("vowelsArray:", vowelsArray)
 
       // ACTION ITEM: your Pig Latin logic goes here!
-      const translateWord = (eachWord, vowelsArray) => {
         if (vowelsArray.length > 0) {
           const firstLetter = vowelsArray[0];
           if (eachWord.toLowerCase().startsWith(firstLetter)) {
             return eachWord + "way";
           }
-        }    
+        }
+       
 
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
       return eachWord
