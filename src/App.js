@@ -32,10 +32,22 @@ const App = () => {
       console.log("vowelsArray:", vowelsArray)
 
       // ACTION ITEM: your Pig Latin logic goes here!
+
+      // if the 0 index of each word is strictly equal to the zero index of vowelsArray
         if (eachWord[0] === vowelsArray[0]){
+      // return each word plus "way"    
           return eachWord + "way"
         } 
+      
+      // if each word includes "q"
+      if (eachWord.includes("q")){
+      // Move the first three characters of the word to the end of the word
+      // Add "ay" to the end of the word
+      // Return the modified word
+        return eachWord.slice(3) + eachWord.slice(0,2) + "ay"
+      }  
        
+
 
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
       return eachWord
