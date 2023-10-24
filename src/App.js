@@ -33,7 +33,7 @@ const App = () => {
       console.log("vowelsArray:", vowelsArray)
 
       // ACTION ITEM: your Pig Latin logic goes here!
-
+ 
       // if the 0 index of each word is strictly equal to the zero index of vowelsArray
         if (eachWord[0] === vowelsArray[0]){
       // return each word plus "way"    
