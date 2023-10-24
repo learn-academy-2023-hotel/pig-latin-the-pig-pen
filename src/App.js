@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import "./App.css"
 import butcherPigImage from "./assets/butcherPig.jpeg"
+import { queryAllByRole } from "@testing-library/react"
 
 const App = () => {
   // ACTION ITEM: to make the development process easier there are some preassigned words in the input field, when you are ready for your full user experience delete the test words passed to useState and pass an empty string
@@ -32,11 +33,24 @@ const App = () => {
       console.log("vowelsArray:", vowelsArray)
 
       // ACTION ITEM: your Pig Latin logic goes here!
+      // if the 0 index of each word is strictly equal to the zero index of vowelsArray
+
         if (eachWord[0] === vowelsArray[0]){
+        // return each word plus "way"
           return eachWord + "way"
         } 
+        // cosnt quArr = ["Qu", "qu"] 
+        // if (eachWord[0, 1] )
+       // if each word includes "q"
+      if (eachWord.includes("q")){
+        // Move the first two characters of the word to the end of the word
+        // Add "ay" to the end of the word
+        // Return the modified word
+          return eachWord.slice(3) + eachWord.slice(0,2) + "ay"
+        }
+        
        
-
+      //  squirrel queen 
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
       return eachWord
     })
