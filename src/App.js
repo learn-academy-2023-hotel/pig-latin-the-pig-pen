@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import "./App.css"
 import butcherPigImage from "./assets/butcherPig.jpeg"
+import { queryAllByRole } from "@testing-library/react"
 
 const App = () => {
   // ACTION ITEM: to make the development process easier there are some preassigned words in the input field, when you are ready for your full user experience delete the test words passed to useState and pass an empty string
